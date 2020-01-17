@@ -1,0 +1,191 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+<section class="container p-t-3">
+    <h2 style="text-align: center; margin-left: auto; margin-right: auto; display: block; font-size: 40px;"> <span
+            style="color: rgb(255, 51, 0); text-align: center;">Unity</span> <span
+            style="color: royalblue;">BI®</span>Features</h2>
+
+</section>
+
+<div>
+    <div class="container">
+        <div class="row row-equal ">
+            <div class="col-md-4">
+                <div class="card" id="card-feature">
+                    <div class="card-body">
+                        <div class="card-img-top card-img-top-250">
+                            <img style="width: 120px; display: block; margin-left: auto; margin-right: auto; margin-top:20px"
+                                class="img-fluid"
+                                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEBUTEw8VFRUXFxUVFRUWFQ8VFRYXFRUYFhUYGBUYHSggGBslHRYWITIhJSkrLi4uFx8zODMtNzQtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAACAwADAQAAAAAAAAAAAAAAAQYHCAIEBQP/xABaEAABAwIDBAQFChMFBQkBAAABAAIDBBEFITEHEmFxBhNBUQgigZGxFDJ0kpOhs8HR8RUXIyUzNDVCUlRVYnJzgqKywtIkY5S00xZTVoOjJkNERWR14eLwNv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwC70X7kHuS4D5kDJ7Agns7UtMgjTmgZNuaCbJac0aZnVA721RftKXEo4lAwe0oBS15I15elAwb8kXvyS15I4BA79yoLb/M5+KUkDjK+Lq4z1UebiXzPa7cbmDIQABkexX5wHzLP23lv16pR9U+ww/Yvsp+ryfY/z+7jZB4R6MUf5Lxz3OH/AEUf7MUf5Lxz3OH/AEV6HUD/AHXSP3v6UdQP910j97+lBGekmDwQQh8VFicD99o36psbYtCbAtjad7IWz7CtM9Balz8Lo5JHlz3U8Jc4klzjuC5J7Se9Zw6YRAU48TFwd9udb9g0dpl6/u8q0Rs5+5FET+LxfwBBUG2DpjiFNi0sUFZLFGGREMaRugmME9neoV9MbFvylP7YfIrg2zjDaZ0dVUUQqamUdSyMySMaWMIc6R272tuG3/Psqr/2sw3/AIeg/wATVoOoNo+LA/dKbztPxKY9Edt9VE9rK5oniJzka1rJm8bNs144WB4rrdEJsOxCd9O3A4o3dTM9rmT1T3bzGEtAaTmb2VbV1BLA/cmhkifa+5Ix7HW791wB7EGzcLxGKoiZNDIHxPG8140I+Ig3BBzBBC7V+5UR4OnSB/WzULnHcc0zx/muaQ2QD9IOB/ZPer24BAyewIJ7AlpkEac0DJ86d1x04lMC2uqBppJoOJPYEtMgmT3apac0BpzRpzRpzRpmdUBpmdUcT8yOJ+ZHEoDiUa8ka8ka8vSgNeXpRryRryRwCA4BHAfMjgPmRpkEBpkFA9oOzZmIzxVDat8E0bQ0Oa3euGuLmkeMC1wJOYKnmnNGnNBU52SVf/EVV/1v9ZR/pXs3xqnZ1lNidRVNA8ZglnZKP0WF5DxyN+BV8aZnVHEoMk4FT1VfXRUFTV1DQ+QtcJXSvLHNa4/Y3u9dkR5VqvCMPZT08ULb7kUbI2X1sxoaCeOS69Z0epZaiOqkgZ18RvHKBuvGRFi4euFnHI3Av3r09czogzx4RszziMDT6wU4LebpZN7+FqqdaM29dFJKqlZVQsLn029vtGroXWLiB27pF7dxcVnNB2KKtlhcXRSvjcQWlzHOY7dOou3OxU4weskxDCa2GpeZX0jG1VNK8udIwb+7NHvnMtc0iwOQPktX6sAUnqTCmQRB0tXiojdZgNo4GSeLG3tc97hn2WFuJDt+D9Rvfi++L7scMjnHs8azAL993Xt+aVpTTIKE7KuhX0NpLPsamaz5iLENsPFjB7Q255knssptpzQGnNGnEo04lGmZ1QGmZ1TA7SlxKYHaUDTSumg4k25pac0ybJaZnVAaZnVHE/MjifmRxKAHeUa8ka8ka8vSgNeXpRryRryRwCA4BHAfMjgPmRpkEBpkEac0ac0ac0BpzRpmdUaZnVHEoDiUcSjiUa5nRADPPsUdxjp1htPIY566Jrm5OYCXuB7nBgO7yK8XbF0xNBQkROtPPeOLvaP+8k8gNgfwnNKy6T2nMoNWnalg5/8AMGW/Qn/oVb7V+i2GmCaso45Wys6t0rY2ObTt6xzfsgeB1b7OB3G5jeBLQDdVz0DiYa+J0jd5kQlqHNOh9TwvmAPAmMDyqXv6WsixCroqxz3Ub2vopCN0vjexx36kNAs57puskcbXJffOwCCsFpToLi2HwYdSVFQOrmipmM6x8Upc2JzvXMIBvGXPALm5XcASMgqib0FphJvPx2g9TXuXtkcZyzXKmtvb/wCbfzqWYN0tjq651NEy1DFDFHBHIL/U4nCOYuHYZIJZ2n9i/rUFmfTRwcD7oM9pP/QvQwjpxhtQ8Mhr4nyONmsLtxzj3Na+xPILJeK0nVVEsV79XJJHfv3HFt/eXUQbf0zOqOJUQ2S40+qwmCWVxdI0Oic43Jd1bi1pJ7XFu7c9pUv4lAcSmM80tczomM+XpQcroQhBxOWaXEpnvKXEoDiUa8ka8ka8vSgNeXpSkeLXJAb2kkAedQDattHbhrBFCGvqZBdoPrY26b7h23N7DtsfLnLGseqqt+/U1Ekrr3G847o/RYPFaOAAQbEOIw6CeP27PlQcRh0E8ft2fKsUhCDbcNQxw8R7Xd+6Qbc7L6ac1UHg3tIo6o21naBzEYuPJcedW/pxKA04lGmZ1RpmdUcSgOJRxKOJRrmdEBrmdFwnma1rnvcGsaC5zibABouST2AALnry9KqLb/0w6qBtBE7x5hvTEfewg5Nv+cR5mnvQVJtF6VOxGvknuerh4OBp+9iaTu5d7s3Hi6yjCEIJJ0B+2n+xaz/KyLq9NW2xOt9lVPwz19+grv7U/wBi1v8AlJV8unI+uld7LqfhnoPDUs2aH+2P9jVPvREj37KJqXbMvtuT2LU+/Hb40Hi9Kvt+q9kT/CuXlr1OlX2/VeyJ/hXLy0GjPB1qN7DJWk/Y6h9uAdHGfTvK09czoqU8GqouytiJya6B4HFwka7+FquvXl6UBry9Kd78kteXpTv3IOSErJoOJHaUteSZCWvL0oDXl6Ua8ka8k79gQY76bYu6qxCpncb70rwzhG07sY8jQFLtmnReSCro66qqKamiLt+Nk8zY5ZWFpaHRstmLuGpHoUcxno+IMZdSSizPVTWa2vFJIC11+LHAr6bU6l78Xq9+43JDExvY2OPxYw0dgsAbDvQd6q2pYu2R4Fed0OcB9SpDkCbZ9Wvi3apjH4+fcaT/AE1DEINd7O8Yjq8OhqGRtY6TeMrWNa0ddvETOsPwn3dfXxs1JNMzqq42AxluDgnR00pby8VuXla5WPxKA4lHEo4lHE5D/wDZlAa5nRGvL0qIdI9pmGUlw+qbI4X+pQWleSOwkHdaf0iFWXSPbzO+7aOlZEPw5T1jyO8MFmtPMuQXbj2Lx0tNLUSm0cTS52l3dga3iTYDiQsgdIcYkq6qWplN3yOLrdjRo1o4NAAHJffHelFbWG9TVyS9oaXWYD3iNtmjyBeZSUz5HtjYwve9waxrRcuc42AA5oOxg2FTVU7IIWF8kh3WtHnJJ7ABck9gBUj2mdE2YbUQU7Xl7jTMklf2OkdJKHbo7G2a0AcFemy3Z+zDYd94DquRo6x+ojbr1bD3aXPaR3AKrvCLb9dYvYkfw0yDrRwU2G4fFK+Iyy1LLOLTG19poA97BI9j+pYIZ4xdgD3Okd4waLH49K46etoPogxm5NvOdIbRhz7SxsnEnVtax7g6pgc2QNaSHvDgSA4+jjOCGuocPZFPExzhEI+sMgEzzR0tPuMc1hbvCSllaQSLeLe1xfo1VAKfBJW+qIpReZofEZTG581RQFsbS9jbvAo53EDQBp++CCuFMtlo/tkvsaf3w0fGoapP0Nx2CnjqYZzOxtQyNvXU+510fVyb+6A4tux3bmPWjVB5nSr7fqvZE/wrl5a9rpljLayumqGMLGvLbBxaXkMY1m88jLfdu7xt2uOuq8VBbng4VNq6piv6+APtxjkaP5ytB68vSsy7BKjdxljb/ZIpmc7APt+4tNa5BAa5BO/YEuAT4BA7JpJoOJF+SWvJM58kuAQHAI4D5l08XxWGlhdLPK2KNgu57tB3ADVzj2AZlVlXbeaJji2KlnkaPvyY2X4gEk252Qentf2efRCITU4Aq4m2ANgJma7hccg4G5aTlmQdbip9oMDpaGlraiF0Va58lNU3BaZDA0Br3sIyktYH5rTwbfab8nze6R/Io9tX6UMxLC6WpjjLAKmaNzXEOIcI2nMjvBBQVGvb6I9F6jEKhsEDDbIySEHcjb2ucfPYanQLy6GPelY217vaLd93AWV+V+1OhwueWihw0hsLyz6kYmMLh442te98iTnkgs3AcJjpKaKnjHiRMDG3tc21cbffONyeJK7/ABKp36f1Pf7Qm90j+Rev0c200FTM2KVklMXGzXSFhiudA54Pi8yLcUHHadjuK01fSmlEjqR+51jY4RK4ubL9UDjuktuwst5bKKdPui+P1tbOxvWyUvWHqgZYY4dw5t8TeG9bS5BOSvjXl6Ua8kGcqDYXiT/Xy00Y/TkefM1tvfXv0Pg/i/1XEiR2iOEDzOc8+hXdrkEcAgrGi2HYYw+O+olPbvSMa0cgxgPvqW9H+g+H0T9+mpGMksR1hL5HgHWznklvkUh0yCNOaA05rOXhFD66xexY/hplo3TiVnLwih9dYvYsfw0yCA4N0iqqUOFPUPjDsyBa1wLBwv61wBPjCxF9V88Zxuoq3h08zpC0WbfdAaCbnda0AC5zNhmdV56EAhCEAhC9bAsM66OrIF3Q03Xj9mogY4+0e5B6+yafcxqjde15Cz3RjmfzLWXALGvRSfcr6WQn1tRA72srT8S2VwCA4BMZZdqWmQ1TGXNByQkmg4nuS4D5kyewJaZBBnDb50gfNiPqQOIipg3xb5OlkYHuee8gODc9LHvVXqS7SanrMXrXXv8AV5G3/VncH8KjSAUj6L9IYoY5KaqgM9JKWuexrt2SORoIbLE7QPAJBBycMio4hBO6TGMGo3dfSQVc9S3Oh4X6nbDE/wC9eWxG73NOYGihNVUOke573Fz3uc97jq5zjdxPMkr5IQCEIQa22XYg6oweke5xcer3HOOZJic6PM9p8XVSk55BV9sIm3sFib+BJM3zyF/86sHgEBwHzI0yCNMgjTmgNOaNOJRpxKNMzqgNMzqs5eEXf6KxexY/hplo3iVnLwi7/RWL2LH8NMgq1CEIBCEIBWPsNoBUVlZA7SWgqIz+3JC2/vquFang53+is3sST4eBBVzmua4g3a5pt3EEH3iCtsU0wcxrh980O84usm7UcL9T4vVx9hkMreUwEuXAbxHkWnOhNTv4bRv7XU8BPPq23Qe1pxKYFtdUtMzqmB2lA00k0HEnsCWiZPnXUxao6qnlkJ9bHI+/6LC74kGOMcqOtqp5L+vllff9J5PxrooQgEIQgEIQgEIQg0T4OUxOGzs7RUuPIOii08oPnVraZBUt4NVUTHWx9zoHj9sSNP8AAFdOnNAac0acSjTiUaZnVAaZnVHEo4lHEoDiVTO2l+GGuiZXQVDXOgbuVMD2lzQJJPFfC/xS0E3uM/Gt2BXNrmdFQvhJs/tFG/vjlb7V7T/MgiP0vuvzw7Eaas7oi71PU+4yn37qO4r0araa/X0c0YH3zo3hnkfbdPkK8pSDC+m+JU4tFiE7R2NLy9ot3NfcDzII+vWwjozW1JHUUc0oOjmxv3PK+26PKV7o2p4vb7cF+/qKTe8/VrzMT6bYlUC02ITubndoeWNN+9rLA+ZB6/0vhBniOI01H2mIO9UVPuMXpurD2Kvw31bKyhgnc5sDt+qqHtDnAyx+I2FnihpI3rnxvFA7Squ2f4RTVElUapkjo4KSWp3YnBjiY3xi1yD2Ocpd0N6f4Thr5H01DV3kaGu35YXCzTcWyFtUh48I7C9ytp5/97EWH9KF2Z80jR5FaWx+q38EpHdoa9nucr2D0KDdJ+lmG4thr6iop6prKWeMbsb4BITM1wFy4EBhtzuAu50Z2gUNDg7JoaOcQiqfTtjdIxz94xiYu3jYbudrd6C3uJTA7SqpwnbfSz1EUIo5gZZGRAl0VmmRwaCbc1awzzQO6aV00HEmy8vpRQumoaqFvr5YJom928+NzWjzleocs0uJQYikjLSWlpa4EhwIIIIyIIOhClHQKOlnfJRVLWNNS0Np6kjOCcZx3P4Dz4pHEaZlXRtQ2WMrg6ppQ2Kq1c3Rk/6X4Mnc7t0PeM6V1HJDI6KWNzJGHdexwIc0jsIQcsSoZIJnwysLJI3Fj2nUEG3lHHtXWU+xr66Yf6tbnWUjWx1o++mh0iqOJbbdd58hZQFAIQhAIQvdwvB3TYdWTtbc08lKXd4jkFQ1x9t1aCx/BsqLVNWz8KKN3tHkfzq+9Oaylsp6Wtw7EBLILwyNMMpF7sa5zSHgdti0XHdftWq4pGloeHBwcAQQbgg5ix7Qg5aZnVHEo4lHEoDiUa5nRGuZ0Rry9KA15elUj4S0eVC/sBqG+fqj8Su7Xl6VUHhIx3o6V/4Mzm+2jJ/lQZ/QhCAQvt6mf1fW7p3N7c3uzetvW8y+KCa7Mzlif/tVZ/FEVClM9mjvulxwutHvMPxKGIPe6MdKZKISsbBTzxzBnWRVEfWxkxkljrXGY3ndvauPSbpXVVpYJnNEcd+qhiY2OGO+u6xvpNyvDQg9joebYjR+yaf4Vq2QM+Sxr0R+6FJ7Jp/hWrZWvL0oOSEIQcT3lLiUyO0pa5nRB8a3OJ5/Mdb2pWbaCoGJxMpsRZJFUMbu0+IGOTMfex1WXjN7pNR29pOlKonccRlZrrc7ZFZQ+mVi/wCUZf3PkQcKN9XguIjrYrObdskZzjngfk4A6OY4A2OeY0uLLsdOuhclNMJaeCV1JO1stO7ckJa143urkuLte3MWOZAB77e70N6emonZBihimG8XU1RUMDvU89rML7EXiJtcHtAOWo9SoxPEcKpa6WtrHCrq3tbTxiRrjdjvHqABkxm74oFhewFsggqgYZP+Ly+5yfIj6GT/AIvL7nJ8ikI2lYv+UZf3PkQNpWL/AJRl/c+RBHvoZP8Ai8vucnyK5PB2o8sRimhye2ma6N7cnNd6oBBa4Zg5hV4NpWL/AJRl/c+Rd3CtrWLQv3jVdcO1kzGOafKAHDyEIO7tX2avw9/XwAuo3niXQOJyY86lv4LjyOdi6VbCOnumHVDz2+pXuPlMN/OW+UfghfOu6d1M9G+tpXiWFtmV+HVDWStjbJlvxvsHuidmMzkeGla4nhrSz1bQh4hD2h8e8XS0kpN2NLxm5hI8STK9rGzhmGveJRrmdFGuguMzT0sLawNjrOqD5IS5glLL7rZnRas3u4jI92ikuvL0oDXl6Ua8vSjXl6Ua5BAa5BVX4Rkd8LhIHrapl+Rim/8AhWpwCrvb1EDgz/zZYXed27/MgzIhCEFkuwH/ALJCo7fVvXXy9Zb1NblvC6rZacdgH/ZX1Pu+N6i6zd7TIG9fYcd9ZjQSToNj0NJNMZ4nyRTU81M5sbmtdaXdBIJ0yBVo9BdnuD4lSmoZDVRNEjo7PmaSd0NJOTfzveVFLTewSG2DMJ++lmd5nbv8qD5t2JYV3T+6j+lDdiWFd0/uv/1Vka8vSjXl6UFe0OxvDI5WSsE+9G9r2kygjeY4OGW7pcKw730S1yGid+wIOVkJWTQcSEteXpTIvyVB7Z9otW2sfRU0zoY4g0SOYd2SR7mhx8cZtaA4Cwtne98rBfT27wI7NDxWOulnRyahqpIJo3N3XOEbiDuyMB8V7XaEEW5aGxS/2rxD8o1X+IqP6l6uEbR8SgaWGp6+M5mOpa2dt+b7uHIGyCJJk31PcPMLBTKTaLM712HYaedFCVwZtAkGmG4Z/goUEPQpozaPMNMPw7/BxLm3aXUfiOH/AODi+VBCEKwenFf6qwihqXQQxyPmqmu6mJkQIZuBuQ1VfIJpsil+ujIHZxVMc1PM38JkkTj/ABNaV6Ow6sdDjTIdWytljkF/F+psdK11u0h0YseJXQ2Vt6qonrSLijpZ5xfQylvVxNPMvPmXLYoPr7SX/v8A/LSoLl6JbN3U2K1FfLVOl3i/qQXPL92QDeMpPriM2gZjIHLICwteXpRry9KNcggNcgjgEcAjgEBwCg+2uK+B1WVyOpd5qiO5811ONMhqovtQivg1aNfqLne1Id8SDJC7OGUZmnihbrJIyMdub3Bo9K6ymOyGh47GaUFt2seZTpl1THPafbBqDVfUN3N0jxbbtuzdta3mWLcVozDPLCdY5Hxnmxxb8S2rxKyltfoepxqqG7YPc2UcesY1xPti7zIIatTbEoSMDpr9pmd555Flla02UwbuDUbezqt727nO+NBK9eXpRrkNEa5DRHAIDgE+AS4BPTJA00k0HEi/JUvtc2W1FVVOrKJrZC8NEsJc1jt9oDQ5hcQ0jdAuLjMZXvldB7kuAQZT+lVjP5Pd7pTf1o+lVjP5Pd7pTf1rVmmQRpzQZPqdmOLsa576Bwa1pc49ZTZNaLk5P7gogtqYvTGSnmjaRvSRyMF9LuYWi/cM1jfGMOfT1EtO8tL4nujcWklpcwkEgkAkZdyDv9HuiVbXB5paYyhhaH2dE2xde3rnC+h0XsHZVjP5Pd7pTf1q1vB5waSGhkqXFu5UuaYwC4uHUukjdvAiwzGVicla3EoMy9NsEqKTBKCGpiMcgqKo7pLDk4NIN2khV0r88JP7WpD/AHsn8AVBoJtTj1N0eldo+uqmRjPWGlBeSP8AmOsvrsQjvjlNwE5/6Eg+NfLaWepFDQi39lpWF47p6j6rN6WLu7B2XxqLhHMf3CPjQac1yCOARwCOAQHAI0yGqNMhqjTiUBpxK8TpzDvYXWt1JppwOfVOsvb0zOq6eNRb1LO06uikb52EIMWK2/BxoN6vqJzpFBu/tSvFj5o3edVItCeDjh27Q1E5GckwZfvbEwEHleR6C29cys++EfQ7tbTzjSSEs8sTySfNI3zLQWvL0qp/CMot/D4ZgPsU+6T+bIw399rUGeFsDZ/HbCaEf+lgJ/aia741j9bN6MwblDTRj7yCFvLdjaPiQelwCOARwCNMhqgNMhqmMuaWnEpjLmgaaSaDiT2BLTIJk9gS05oDTmjTiUacSjTM6oDTM6rIG0D7q1vsmf4QrX/ErIG0E/XWt9kz/CFBofYkPrFSk/3/APmZVONczooPsSh4ipL/AN//AJmVTjXl6UFPeEkf7JSn++f/AAKn+geECqxKlgIu18rS8HtYzx5B7VrlcfhIn+x0p/v3fBlRjwc8J6yunqDpDEGj9KY5H2rHjyoIvtfpZI8aqusNy94kYe9jmjctyHi/sr1tgI+vDf1M3oClXhH4GLU9Y1ul6eQ8Dd8V/L1nnCi/g/AnGP8AkS+lgQaV4BGmQ1RpkNUacSgNOJRpmdUaZnVHEoDiVxkZdpv2gjzhcuJQM8ygxFI3dJHaCQfItV7H8P6rBaUH79rpTx6x7nj90tWYcbp92rnjAuRNIwAZnKQgABbFwiiENPFA31sUccY5MaGj0IO3ry9KiO1qh6/Bqto+8jEoP6lzZD7zSPKpdrkNF8MQphLFJER4r2PY7k9pafSgxOttUse7Gxg7GtHmACxjTUZ9UticM+tbG4cd/dIW09MhqgNMhqjTiUacSjTmgNOaYHaUtMymB2lA00IQcSfOlpzXIpAWz7UC0zOq602IQsdaSeNrvwXPYCPISvljsM7qaZtO9rJ3RubE5191jyLB2QOmuhWO/UU8lT1Ja507perc11y8yl26Q6+d9690GxRi9NqaqH3WL5Vkvp7IHYpWuaQQaiYgggggyG1iFblBsCh6pnXVsgk3RviMMLN63jbpc0Etv3hfcbAqT8dn9rD8iD3NjOIwtwSla+eNpHX3a6RgOdRKRcE5KanGKY/+Kht+tjz99VcNgVJ+Oz+1h+RVhtL6CPwuoaA7rIJATE833vFA32vyADrm9hfIhBaHhHPBoKYggjr8iND9SdovV2CYV1OEiS3jVEj5Ce5rfqbR+4T+0qkri4dGaYkG3q6bd3hcbvVh4t8rb29p23XubPNsT6SOOlq4g+BgDGSRgNkjaMhdoykAHI80Fy7QsE9WYZUU4bd5YXR/rI/HZnxLQPKqR8HkfXZ/Cml/jiHxrSOiybF0mqMOxapmptwES1EZa5jSxzDKSWkCxtdrdCDlqg1jpxKNMzqods16ex4pFI4Qujli3BI2+83x97dLHdoO6ciLjjqpkB2lAuJRxKYHaUWvqgWuZRry9Kdr8lVe1Pas6gmdSU0G9OGtLpJAerZvgOG60evNjrew45hBV1HhnW9KDDbL6Iykj82Odz3futK1ITdZk2P1b6jpDFNK7ekeaiR7rNF3OhkJNgLDU6LTh7ggXAI4BPgEaaIMtdIMK6rpM6HsdXROHKeRkg954WpdOazRttndDjxljO7IxtPI1wAuHsALXWORtujXuU+2XbWnVs7KSqhAncHbksfrXljS4h7PvDZpzBsT2BBbGnNGmZTA7SgDtKBcT8yYzzKLXzKNeSB3TQhAkJoQJVjB/wD1Tv1H8qEILPKEIQCgm2f7kv8A04/SUIQQnbT9w8P/AE2fAuVU9B/ulSfr4v4whCDY6xj0r+36v2RP8K5NCC9vBz+5sv68/wADVayaECKCmhALPHhHfb9P+o/nchCDwthv3cp/0Z/gXrUYTQgSE0IMxbfPuy/9VD/Cu74O33Uk9jv/AI2IQg0emhCBFNCECQhCD//Z"
+                                alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2" style="text-align: center;">
+                            <h4>Department Collaboration</h4>
+                            <p>
+                                Real-time messaging,easy file sharing features and patient data chaining
+                                to help departments view and review patient data easily.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" id="card-feature">
+                    <div class="card-body">
+                        <div class="card-img-top card-img-top-250">
+                            <img style="width: 120px; display: block; margin-left: auto; margin-right: auto; margin-top:20px"
+                                class="img-fluid"
+                                src="https://cdn1.iconfinder.com/data/icons/hospital-clinic-healthcare/233/hospital-011-512.png"
+                                alt="Carousel 2">
+                        </div>
+                        <div class="card-block p-t-2" style="text-align: center;">
+                            <h4>World-class infrastructure</h4>
+                            <p>
+                                UnityBI® is powered by Microsoft’s Azure platform which
+                                is powered by over 100 highly secure
+                                facilities worldwide and linked by one of the largest networks on
+                                earth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" id="card-feature">
+                    <div class="card-body">
+                        <div class="card-img-top card-img-top-250">
+                            <img style="width: 120px; display: block; margin-left: auto; margin-right: auto; margin-top:20px"
+                                class="img-fluid"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1FaHyayHBzSuBV8NNRMXawevNLDEEtZr7EBBz0-U68OcN_j-O&s"
+                                alt="Carousel 3">
+                        </div>
+                        <div class="card-block p-t-2" style="text-align: center;">
+                            <h4>Cross Platform Compatibility</h4>
+                            <p>
+                                UnityBI® offers responsive support for any device and supports any platform,including
+                                Windows®, Linux, macOS®, iOS®, AndroidTM, and Chrome OSTM.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-equal ">
+            <div class="col-md-4">
+                <div class="card" id="card-feature">
+                    <div class="card-body">
+                        <div class="card-img-top card-img-top-250">
+                            <img style="width: 120px; display: block; margin-left: auto; margin-right: auto; margin-top:20px"
+                                class="img-fluid"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgPRPKxynCUTXfT7E5gVJuzRgXkZa9TtRxb9W9oguQo5D8Gs2J&s"
+                                alt="Carousel 4">
+                        </div>
+                        <div class="card-block p-t-2" style="text-align: center;">
+                            <h4>UnityBI® is secure</h4>
+                            <p>
+                                The platform allows different access and authorization levels.Each user can only access
+                                the system based on their roles and access level.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" id="card-feature">
+                    <div class="card-body">
+                        <div class="card-img-top card-img-top-250">
+                            <img style="width: 120px; display: block; margin-left: auto; margin-right: auto; margin-top:20px"
+                                class="img-fluid"
+                                src="https://cdn2.iconfinder.com/data/icons/easyicons-45a-hackers-part-1/128/hacker-crime-computer-line-mask-512.png"
+                                alt="Carousel 5">
+                        </div>
+                        <div class="card-block p-t-2" style="text-align: center;">
+                            <h4><span class="pull-xs-right">12.04</span>Traffic Security</h4>
+                            <p>
+                                All UnityBI® traffic is secured using Transport Layer Security protocol
+                                (TLS 1.2). User’s can rest assured that their data is safe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 fadeIn wow">
+                <div class="card" id="card-feature">
+                    <div class="card-body">
+                        <div class="card-img-top card-img-top-250">
+                            <img style="width: 120px; display: block; margin-left: auto; margin-right: auto; margin-top:20px"
+                                class="img-fluid"
+                                src="https://cdn0.iconfinder.com/data/icons/artificial-intelligence-42/1000/AI-14-512.png"
+                                alt="Carousel 6">
+                        </div>
+                        <div class="card-block p-t-2" style="text-align: center;">
+                            <h4 class="big-letters">AI-powered insights</h4>
+                            <p>
+                                UnityBI® uses the existing patients data to derive and publish artificial intelligence
+                                powered insights
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+</div>
+<style>
+    h1 {
+        text-decoration: underline;
+    }
+</style>
+{% endblock %}
+
+<script>
+    (function ($) {
+        "use strict";
+
+        // manual carousel controls
+        $('.next').click(function () {
+            $('.carousel').carousel('next');
+            return false;
+        });
+        $('.prev').click(function () {
+            $('.carousel').carousel('prev');
+            return false;
+        });
+
+    })(jQuery);
+</script>
+
+
+<style>
+    .row-equal>div[class*='col-'] {
+        display: flex;
+        flex: 1 0 auto;
+    }
+
+    .row-equal .card {
+        width: 100%;
+    }
+
+    /* ensure equal card height inside carousel */
+    .carousel-inner>.row-equal.active,
+    .carousel-inner>.row-equal.next,
+    .carousel-inner>.row-equal.prev {
+        display: flex;
+    }
+
+    /* prevent flicker during transition */
+    .carousel-inner>.row-equal.active.left,
+    .carousel-inner>.row-equal.active.right {
+        opacity: 0.5;
+        display: flex;
+    }
+
+
+    /* control image height */
+    .card-img-top-250 {
+        max-height: 250px;
+        overflow: hidden;
+    }
+</style>
